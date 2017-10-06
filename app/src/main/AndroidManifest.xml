@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.inzenjer.ova">
+    <permission android:name="in.wptrafficanalyzer.locationgeocodingv2.permission.MAPS_RECEIVE" android:protectionLevel="signature" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Main_page" android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity android:name="Home" />
+        <activity android:name="Nearby_map" />
+        <activity android:name="Nearby_list" />
+        <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyBmn3QIbPfMNX3k5PzQHJ6y9KLamgK8Fhg" />
+        <activity android:name="E_contact" />
+        <activity android:name="Home_2" />
+        <activity android:name="Garage" />
+        <activity android:name="Ova_registration" />
+        <activity android:name="Guest_home" />
+        <activity android:name="RSAssist" android:windowSoftInputMode="stateHidden" />
+        <activity android:name="ResultActivity" />
+        <activity android:name="Testclass" />
+        <activity android:name="Get_estimate" />
+        <activity android:name="Req_myserv" />
+        <activity android:name="Service_center" />
+        <activity android:name="Veh_status" />
+
+    </application>
+
+</manifest>

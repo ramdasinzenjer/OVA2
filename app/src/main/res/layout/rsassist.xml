@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Vehicle Category" />
+
+    <EditText
+        android:id="@+id/et_cmmnt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="64dp"
+		
+		android:focusableInTouchMode="true"
+        android:hint="Enter other details" />
+
+    <Button
+        android:id="@+id/bt_rqstasst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="22dp"
+        android:text="Request for Assistance" />
+
+    <TextView
+        android:id="@+id/text_selcomp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_above="@+id/list"
+        android:layout_alignLeft="@+id/list"
+        android:layout_marginBottom="33dp"
+        android:text="We are ready to help. Please select the complaints."
+        android:textSize="15dp" />
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_above="@+id/et_cmmnt"
+        android:layout_alignLeft="@+id/et_cmmnt" >
+    </ListView>
+
+    <Spinner
+        android:id="@+id/spinner_vlist"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/spinner_vlist"
+        android:layout_below="@+id/spinner_vlist"
+        android:text="Select model" />
+
+    <Spinner
+        android:id="@+id/spinner_vmodel"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/textView2" />
+
+</RelativeLayout>

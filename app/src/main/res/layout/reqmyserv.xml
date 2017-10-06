@@ -1,0 +1,92 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:padding="5dp">
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+   >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <Spinner
+                android:id="@+id/spinnercat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" />
+                <Spinner
+                android:id="@+id/spinnerserv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                android:layout_below="@+id/spinnercat"
+                android:layout_marginTop="10dp"/>
+                
+                
+                <EditText 
+                    android:id="@+id/et_cardtype"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/spinnerserv"
+                    android:hint="Visa or Mastercard or COD"
+                   android:gravity="center_horizontal"
+                   android:layout_marginTop="10dp"
+                    />
+                <EditText 
+                    android:id="@+id/et_cardname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/et_cardtype"
+                    android:hint="Name"
+                   android:gravity="center_horizontal"
+                   android:layout_marginTop="10dp"
+                    />
+                <EditText 
+                    android:id="@+id/et_expdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/et_cardname"
+                    android:hint="Exp. date in yyyy-mm-dd"
+                   android:gravity="center_horizontal"
+                   android:layout_marginTop="10dp"
+                    />
+                <EditText 
+                    android:id="@+id/et_cardnum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/et_expdate"
+                    android:hint="Card number"
+                   android:gravity="center_horizontal"
+                   android:layout_marginTop="10dp"
+                    />
+                <EditText 
+                    android:id="@+id/et_cmnt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/et_cardnum"
+                    android:hint="Comment"
+                   android:gravity="center_horizontal"
+                   android:layout_marginTop="10dp"
+                    />
+
+                <Button
+                    android:id="@+id/bt_submit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/et_cmnt"
+                    android:text="Submit"
+                    android:gravity="center_horizontal"
+                   android:layout_marginTop="10dp" />
+
+            </RelativeLayout>
+            
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

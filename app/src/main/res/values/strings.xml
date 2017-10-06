@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+    <resources>
+    <string name="app_name">OVA</string>
+    <string name="serverid">http://192.168.1.10/Ova/</string>
+    - <!--  <string name="serverid">http://192.168.1.8/Ova/</string>
+  -->
+    - <string-array name="vehicledefect_array">
+    <item>Will not start</item>
+    <item>Has a flat tire</item>
+    <item>Out of fuel</item>
+    <item>Locked out/ Lost keys</item>
+    <item>Has mechanical issues</item>
+    <item>Is damaged/ Stuck</item>
+</string-array>
+</resources>
